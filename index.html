@@ -3,6 +3,16 @@
 <meta name="viewport" content= "width=device-width, initial-scale=1.0">
 <head>
 <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "73ef109c-33b3-45d0-8a85-948cf9a60690",
+    });
+  });
+</script>
+<div class='onesignal-customlink-container'></div>
 <!-- PushAlert -->
 <script type="text/javascript">
         (function(d, t) {
@@ -15,8 +25,9 @@
 <!-- End PushAlert -->
 </head>
 <body>
-<h1>see the popup</h1>
 
+<h1>see the popup</h1>
+<div class='onesignal-customlink-container'></div>
 
 </body>
 </html>
